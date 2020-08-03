@@ -6,6 +6,6 @@ class Post(models.Model):
     title = models.CharField(max_length= 30)
     content = models.TextField()
     
-    created = models.DateTimeField
+    created = models.DateTimeField()
 
     author = models.ForeignKey(User, on_delete=True)
